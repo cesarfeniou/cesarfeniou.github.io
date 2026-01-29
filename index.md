@@ -9,15 +9,8 @@ title: About
     <h1>César Feniou</h1>
 
     <p class="intro-meta">
-      Quantum Algorithm Research Lead @ Qubit Pharmaceuticals<br>
-      Paris · <a href="mailto:cesarf@qubit-pharmaceuticals.com">cesarf@qubit-pharmaceuticals.com</a>
-    </p>
-
-    <p>
-      I work on quantum algorithms for molecular simulation and
-      industrial quantum advantage.
-      My research focuses on quantum signal processing,
-      numerical analysis, and hybrid quantum–classical methods.
+      Quantum Algorithm Research Lead @ Qubit Pharmaceuticals<br> · Paris, France
+      <a href="mailto:cesarf@qubit-pharmaceuticals.com">cesarf@qubit-pharmaceuticals.com</a>
     </p>
 
   </div>
@@ -33,12 +26,16 @@ title: About
 
 ## Research
 
-Brief description of your current research directions.
-You can later expand this into bullet points or subpages.
+I work on the development of quantum algorithms for quantum many-body problems. My interests include multiple levels of the quantum computing stack, ranging from gate-level compilation to high-level formulations of problems in quantum chemistry and applied mathematics, targetting applications in materials science and pharmaceutical research.
 
 ## Background
 
-Short academic background (education, previous positions, etc.).
-Keep it minimal — one paragraph is enough.
+· Ph.D. in Chemistry — Sorbonne Université (2025)
+    Dissertation: Quantum Algorithms for First-Principles Quantum Chemistry
+    Advisors: Prof. Jean-Philip Piquemal (Chemistry), Dr. Emmanuel Giner (Chemistry & Physics)
+
+· B.S. & M.S. in Chemistry — École Normale Supérieure Paris-Saclay (2018–2022)
+
+· ARTeQ -- Degree in Quantum Technologies — Université Paris-Saclay (2021)
 
 {% include social-icons.html %}
