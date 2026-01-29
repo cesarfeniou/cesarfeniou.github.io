@@ -191,3 +191,5 @@ a{ color: var(--link); }
     margin-bottom: 1.2rem;
   }
 }
+.intro { display: flex !important; }
+.intro-photo img { width: 180px !important; height: 180px !important; }
