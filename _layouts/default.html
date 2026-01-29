@@ -3,11 +3,24 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>
       {% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}
     </title>
+
     <meta name="description" content="{{ site.description }}" />
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+    <!-- Font Awesome (FOR ICONS) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-+YkY4X7QZPZxDqZpQZpQ2U0N1D9h6j9D9+X9Qk9d1Y9E8F+Zl+8Wl5t8FZ8zZtZ+Z9Z9Z9Z9Z=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
