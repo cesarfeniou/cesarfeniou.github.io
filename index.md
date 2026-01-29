@@ -27,3 +27,7 @@ Another short paragraph if needed.
 ---
 
 {% include social-icons.html %}
+
+<div class="intro-photo">
+  <img src="{{ '/assets/img/profile.jpg' | relative_url }}" alt="César Feniou">
+</div>
