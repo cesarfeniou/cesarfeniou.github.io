@@ -1,3 +1,8 @@
+/* =========================
+   Main stylesheet (merged)
+   ========================= */
+
+/* --- Theme variables --- */
 :root{
   --bg: #0b0f14;
   --panel: #0f1620;
@@ -10,6 +15,7 @@
 *{ box-sizing: border-box; }
 
 html, body{ height:100%; }
+
 body{
   margin:0;
   background: var(--bg);
@@ -19,11 +25,13 @@ body{
   text-rendering: optimizeLegibility;
 }
 
+/* --- Layout container --- */
 .container{
   width: min(980px, calc(100% - 40px));
   margin: 0 auto;
 }
 
+/* --- Header / nav --- */
 .site-header{
   position: sticky;
   top: 0;
@@ -48,7 +56,7 @@ body{
 
 .nav a{
   color: var(--muted);
-  text-decoration: none;     /* <- removes default underlines */
+  text-decoration: none; /* removes default underlines */
   margin-left: 16px;
   padding: 6px 10px;
   border-radius: 10px;
@@ -67,6 +75,7 @@ body{
   background: rgba(255,255,255,0.04);
 }
 
+/* --- Page title / content panel --- */
 .page-title{
   margin: 28px 0 12px;
   font-size: 28px;
@@ -80,15 +89,19 @@ body{
   padding: 18px;
 }
 
+/* --- Links --- */
 a{ color: var(--link); }
+
 .content a{
-  text-decoration: none;      /* <- no underline in content */
-  border-bottom: 1px solid rgba(139,211,255,0.25); /* subtle “modern” */
+  text-decoration: none; /* no underline */
+  border-bottom: 1px solid rgba(139,211,255,0.25); /* subtle underline */
 }
+
 .content a:hover{
   border-bottom-color: rgba(139,211,255,0.70);
 }
 
+/* --- Footer --- */
 .site-footer{
   border-top: 1px solid var(--border);
   margin-top: 40px;
@@ -96,4 +109,85 @@ a{ color: var(--link); }
   color: var(--muted);
   font-size: 14px;
 }
-@import "custom.css";
+
+/* =========================
+   About page blocks (from custom.css)
+   ========================= */
+
+/* --- Social icons --- */
+.social-icons{
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1.5rem; /* space between icons */
+  align-items: center;
+}
+
+.social-icons a{
+  color: inherit;
+  text-decoration: none;
+}
+
+.social-icons a:hover{
+  opacity: 0.7;
+}
+
+.social-icons i{
+  transition: opacity 0.2s ease;
+}
+
+/* --- Intro layout --- */
+.intro{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  gap: 3rem;
+  margin-top: 2.5rem;
+}
+
+/* Left text column */
+.intro-text{
+  flex: 1;
+  min-width: 0;
+}
+
+/* Right photo column */
+.intro-photo{
+  flex-shrink: 0;
+  margin-left: auto; /* keeps photo stuck to the right edge */
+}
+
+.intro-photo img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* Metadata styling */
+.intro-meta{
+  color: #999;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+/* Mobile fallback */
+@media (max-width: 768px){
+  .intro{
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 1.25rem;
+  }
+
+  .intro-photo{
+    margin-left: 0;
+  }
+
+  .intro-photo img{
+    width: 170px;
+    height: 170px;
+    margin-bottom: 1.2rem;
+  }
+}
