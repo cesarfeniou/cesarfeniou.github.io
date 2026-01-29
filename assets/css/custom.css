@@ -1,0 +1,18 @@
+.social-icons{
+  margin-top: 42px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255,255,255,.12);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.social-icons a{
+  padding: 8px 12px;
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 999px;
+  text-decoration: none;
+  opacity: .9;
+}
+
+.social-icons a:hover{ opacity: 1; }
