@@ -12,3 +12,10 @@ plugins: []
 
 # Optional: nicer permalinks later
 permalink: pretty
+
+scholar:
+  source: _bibliography
+  bibliography: papers.bib
+  style: apa
+  sort_by: year
+  order: descending
