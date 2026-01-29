@@ -114,41 +114,41 @@ a{ color: var(--link); }
    About page blocks (from custom.css)
    ========================= */
 
-/* --- Intro layout --- */
+/* --- Intro layout (About) --- */
 .intro{
   display: flex;
-  align-items: flex-start;
+  align-items: flex-start;     /* top-align text + photo */
   justify-content: space-between;
   width: 100%;
-  gap: 3rem;
-  margin-top: 2.5rem;
+  gap: 2rem;
+  margin-top: 0;              /* <-- remove extra top gap */
 }
 
-/* Left text column */
-.intro-text{
-  flex: 1;
-  min-width: 0;
+/* Remove default heading spacing pushing content down */
+.intro-text h1{
+  margin: 0 0 0.6rem 0;
+}
+
+/* Meta spacing */
+.intro-meta{
+  margin: 0 0 1rem 0;
+  color: #999;
+  font-size: 0.95rem;
 }
 
 /* Right photo column */
 .intro-photo{
-  flex-shrink: 0;
-  margin-left: auto; /* keeps photo stuck to the right edge */
+  flex: 0 0 auto;
+  margin-left: auto;
 }
 
 .intro-photo img{
-  width: 200px;
-  height: 200px;
+  display: block;
+  width: 180px;               /* <- set your desired size here */
+  height: 180px;
   object-fit: cover;
   border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
-}
-
-/* Metadata styling */
-.intro-meta{
-  color: #999;
-  font-size: 0.95rem;
-  margin-bottom: 1rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
 }
 
 /* Mobile fallback */
@@ -167,28 +167,9 @@ a{ color: var(--link); }
   .intro-photo img{
     width: 170px;
     height: 170px;
-    margin-bottom: 1.2rem;
   }
 }
-.intro { display: flex !important; }
-.intro-photo img { width: 200px !important; height: 200px !important; }
 
-/* --- About intro alignment fixes --- */
-.intro{
-  display:flex;
-  align-items:flex-start;
-  justify-content:space-between;
-  gap: 2rem;
-}
-
-.intro-text h1{
-  margin-top: 0;   /* important: remove default top margin */
-  margin-bottom: 0.6rem;
-}
-
-.intro-meta{
-  margin-top: 0;
-}
 
 /* --- Footer --- */
 .site-footer {
