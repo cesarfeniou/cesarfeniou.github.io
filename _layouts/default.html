@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{{ page.title }} | {{ site.title }}</title>
+  </head>
+  <body style="max-width: 900px; margin: 40px auto; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;">
+    <header style="margin-bottom: 24px;">
+      <a href="{{ "/" | relative_url }}" style="text-decoration:none; font-weight:700;">{{ site.title }}</a>
+      <nav style="float:right;">
+        <a href="{{ "/about" | relative_url }}">About</a>
+        &nbsp;·&nbsp;
+        <a href="{{ "/blog" | relative_url }}">Blog</a>
+      </nav>
+    </header>
+
+    <main>
+      {{ content }}
+    </main>
+
+    <footer style="margin-top:48px; font-size: 14px; opacity: 0.7;">
+      © {{ "now" | date: "%Y" }} {{ site.title }}
+    </footer>
+  </body>
+</html>
