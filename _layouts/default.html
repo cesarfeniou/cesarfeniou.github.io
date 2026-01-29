@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      {% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}
+    </title>
+    <meta name="description" content="{{ site.description }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+        <nav class="nav">
+          <a href="{{ '/' | relative_url }}" {% if page.url == "/" %}class="active"{% endif %}>About</a>
+          <a href="{{ '/publications/' | relative_url }}" {% if page.url contains '/publications' %}class="active"{% endif %}>Publications</a>
+          <a href="{{ '/news/' | relative_url }}" {% if page.url contains '/news' %}class="active"{% endif %}>News</a>
+          <a href="{{ '/cv/' | relative_url }}" {% if page.url contains '/cv' %}class="active"{% endif %}>CV</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1 class="page-title">{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+      <div class="content">
+        {{ content }}
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <span>© {{ site.title }} · Built with Jekyll</span>
+      </div>
+    </footer>
+  </body>
+</html>
