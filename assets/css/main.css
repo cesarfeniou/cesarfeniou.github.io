@@ -193,3 +193,34 @@ a{ color: var(--link); }
 }
 .intro { display: flex !important; }
 .intro-photo img { width: 200px !important; height: 200px !important; }
+
+/* --- Footer social bar --- */
+.site-footer{
+  border-top: 1px solid var(--border);
+  margin-top: 40px;
+  padding: 22px 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.footer-inner{
+  display:flex;
+  justify-content:center;
+}
+
+/* icons */
+.social-icons{
+  display:flex;
+  gap: 22px;
+  align-items:center;
+}
+
+.social-icons a{
+  color: var(--muted);
+  text-decoration:none;
+  font-size: 28px; /* icon size */
+}
+
+.social-icons a:hover{
+  color: var(--text);
+}
