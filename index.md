@@ -10,7 +10,7 @@ title: About
 
     <p class="intro-meta">
       Quantum Algorithm Research Lead @ Qubit Pharmaceuticals<br>
-      Paris · <a href="mailto:cesar.feniou@yourmail.com">cesar.feniou@yourmail.com</a>
+      Paris · <a href="mailto:cesarf@aubit-pharmaceuticals.com">cesarf@qubit-pharmaceuticals.com</a>
     </p>
 
     <p>
