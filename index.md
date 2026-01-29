@@ -7,7 +7,7 @@ permalink: /
 # César Feniou
 
 **Quantum Algorithm Research Lead @ Qubit Pharmaceuticals**  
-Paris · <a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a>
+Paris · <a href="mailto:cesarf@qubit-pharmaceuticals.com">cesarf@qubit-pharmaceuticals.com</a>
 
 ---
 
