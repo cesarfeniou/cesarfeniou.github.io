@@ -1,0 +1,12 @@
+title: "César Feniou"
+description: "Quantum Research Scientist"
+url: "https://chemcesar.github.io"
+baseurl: ""
+
+markdown: kramdown
+
+# Keep it minimal: no plugins at start
+plugins: []
+
+# Optional: nicer permalinks later
+permalink: pretty
