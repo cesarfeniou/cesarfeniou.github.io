@@ -20,11 +20,10 @@ title: About
       numerical analysis, and hybrid quantum–classical methods.
     </p>
 
-    {% include social-icons.html %}
   </div>
 
   <div class="intro-photo">
-    <img src="{{ '/assets/img/profile.jpg' | relative_url }}"
+    <img src="{{ '/assets/img/profile.jpeg' | relative_url }}"
          alt="César Feniou">
   </div>
 
@@ -41,3 +40,5 @@ You can later expand this into bullet points or subpages.
 
 Short academic background (education, previous positions, etc.).
 Keep it minimal — one paragraph is enough.
+
+{% include social-icons.html %}
