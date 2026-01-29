@@ -30,8 +30,6 @@ I work on the development of quantum algorithms for quantum many-body problems. 
 
 ## Background
 
-## Background
-
 - **Ph.D. in Chemistry** · *Sorbonne Université* (2025)  
   **Dissertation:** *Quantum Algorithms for First-Principles Quantum Chemistry*  
   **Advisors:** Prof. Jean-Philip Piquemal (Chemistry), Dr. Emmanuel Giner (Chemistry & Physics)
