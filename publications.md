@@ -6,7 +6,7 @@ permalink: /publications/
 
 Below is a list of my publications.  
 You can also find them on
-<a href="https://scholar.google.com/citations?user=YOUR_ID_HERE" target="_blank">
+<a href="https://scholar.google.com/citations?user=atHK9rYAAAAJ&hl" target="_blank">
 Google Scholar
 </a>.
 
