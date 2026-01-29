@@ -13,6 +13,9 @@ plugins: []
 # Optional: nicer permalinks later
 permalink: pretty
 
+plugins:
+  - jekyll-scholar
+
 scholar:
   source: _bibliography
   bibliography: papers.bib
