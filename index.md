@@ -9,8 +9,10 @@ title: About
     <h1>César Feniou</h1>
 
     <p class="intro-meta">
-      Quantum Algorithm Research Lead @ Qubit Pharmaceuticals<br> · Paris, France
-      <a href="mailto:cesarf@qubit-pharmaceuticals.com">cesarf@qubit-pharmaceuticals.com</a>
+      Quantum Algorithm Research Lead @ Qubit Pharmaceuticals · Paris, France<br>
+      <a href="mailto:cesarf@qubit-pharmaceuticals.com">
+        cesarf@qubit-pharmaceuticals.com
+      </a>
     </p>
 
   </div>
