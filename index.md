@@ -1,33 +1,43 @@
 ---
 layout: default
 title: About
-permalink: /
 ---
 
-# César Feniou
+<div class="intro">
 
-**Quantum Algorithm Research Lead @ Qubit Pharmaceuticals**  
-Paris · <a href="mailto:cesarf@qubit-pharmaceuticals.com">cesarf@qubit-pharmaceuticals.com</a>
+  <div class="intro-text">
+    <h1>César Feniou</h1>
 
----
+    <p class="intro-meta">
+      Quantum Algorithm Research Lead @ Qubit Pharmaceuticals<br>
+      Paris · <a href="mailto:cesar.feniou@yourmail.com">cesar.feniou@yourmail.com</a>
+    </p>
+
+    <p>
+      I work on quantum algorithms for molecular simulation and
+      industrial quantum advantage.
+      My research focuses on quantum signal processing,
+      numerical analysis, and hybrid quantum–classical methods.
+    </p>
+
+    {% include social-icons.html %}
+  </div>
+
+  <div class="intro-photo">
+    <img src="{{ '/assets/img/profile.jpg' | relative_url }}"
+         alt="César Feniou">
+  </div>
+
+</div>
+
+<hr>
 
 ## Research
 
-- **Theme A** — one-line description.
-- **Theme B** — one-line description.
-- **Theme C** — one-line description.
-
----
+Brief description of your current research directions.
+You can later expand this into bullet points or subpages.
 
 ## Background
 
-Short paragraph here (education / past roles / interests).  
-Another short paragraph if needed.
-
----
-
-{% include social-icons.html %}
-
-<div class="intro-photo">
-  <img src="{{ '/assets/img/profile.jpg' | relative_url }}" alt="César Feniou">
-</div>
+Short academic background (education, previous positions, etc.).
+Keep it minimal — one paragraph is enough.
