@@ -10,7 +10,7 @@ title: About
 
     <p class="intro-meta">
       Quantum Algorithm Research Lead @ Qubit Pharmaceuticals<br>
-      Paris · <a href="mailto:cesarf@aubit-pharmaceuticals.com">cesarf@qubit-pharmaceuticals.com</a>
+      Paris · <a href="mailto:cesar.feniou@yourmail.com">cesar.feniou@yourmail.com</a>
     </p>
 
     <p>
@@ -23,7 +23,7 @@ title: About
   </div>
 
   <div class="intro-photo">
-    <img src="{{ '/assets/profile_pic.jpeg' | relative_url }}"
+    <img src="{{ '/assets/img/profile.jpg' | relative_url }}"
          alt="César Feniou">
   </div>
 
