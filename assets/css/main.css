@@ -192,4 +192,4 @@ a{ color: var(--link); }
   }
 }
 .intro { display: flex !important; }
-.intro-photo img { width: 180px !important; height: 180px !important; }
+.intro-photo img { width: 200px !important; height: 200px !important; }
