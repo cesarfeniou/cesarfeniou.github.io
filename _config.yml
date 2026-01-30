@@ -21,4 +21,5 @@ scholar:
   bibliography: papers.bib
   style: apa
   sort_by: year
-  order: ascending
+  group_by: year
+  order: descending
