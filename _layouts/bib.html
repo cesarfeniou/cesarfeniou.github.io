@@ -1,26 +1,29 @@
-<div class="pub-row">
-  <div class="pub-year">{{ entry.year }}</div>
-  <div class="pub-details">
-    <span class="pub-title">
-      {% if entry.url %}
-        <a href="{{ entry.url }}" target="_blank">{{ entry.title }}</a>
-      {% else %}
-        {{ entry.title }}
-      {% endif %}
-    </span>
-    <span class="pub-authors">
-      {{ entry.author | replace: 'Feniou, César', '<strong>Feniou, C.</strong>' | replace: 'César Feniou', '<strong>Feniou, C.</strong>' }}
-    </span>
-    <span class="pub-journal">
-      <em>{{ entry.journal }}</em>{% if entry.volume %}, vol. {{ entry.volume }}{% endif %}{% if entry.pages %}, pp. {{ entry.pages }}{% endif %}
-    </span>
+<div class="row">
+  <div class="col-sm-2 abbr">
+    {% if entry.year %}
+      <span class="badge">{{ entry.year }}</span>
+    {% endif %}
+  </div>
+
+  <div id="{{ entry.key }}" class="col-sm-8">
+    <div class="title" style="font-weight: bold; color: var(--text);">{{ entry.title }}</div>
     
-    <div class="pub-links">
+    <div class="author">
+      {{ entry.author | replace: 'Feniou, César', '<strong>Feniou, C.</strong>' | replace: 'César Feniou', '<strong>Feniou, C.</strong>' }}
+    </div>
+
+    <div class="periodical">
+      <em>{{ entry.journal }}</em>
+      {% if entry.volume %} {{ entry.volume }}{% endif %}
+      {% if entry.pages %} ({{ entry.pages }}){% endif %}
+    </div>
+
+    <div class="links">
       {% if entry.doi %}
-        <a href="https://doi.org/{{ entry.doi }}" class="link-btn">DOI</a>
+        <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size: 0.8rem; color: var(--link);">DOI</a>
       {% endif %}
       {% if entry.arxiv %}
-        <a href="https://arxiv.org/abs/{{ entry.arxiv }}" class="link-btn">arXiv</a>
+        <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size: 0.8rem; color: var(--link);">arXiv</a>
       {% endif %}
     </div>
   </div>
