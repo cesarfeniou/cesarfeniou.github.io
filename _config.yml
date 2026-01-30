@@ -19,7 +19,8 @@ plugins:
 scholar:
   source: _bibliography
   bibliography: papers.bib
+  template: bib   
   style: apa
   sort_by: year
-  group_by: year
   order: descending
+  group_by: none    
