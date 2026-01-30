@@ -1,0 +1,27 @@
+<div class="pub-row">
+  <div class="pub-year">{{ entry.year }}</div>
+  <div class="pub-details">
+    <span class="pub-title">
+      {% if entry.url %}
+        <a href="{{ entry.url }}" target="_blank">{{ entry.title }}</a>
+      {% else %}
+        {{ entry.title }}
+      {% endif %}
+    </span>
+    <span class="pub-authors">
+      {{ entry.author | replace: 'Feniou, César', '<strong>Feniou, C.</strong>' | replace: 'César Feniou', '<strong>Feniou, C.</strong>' }}
+    </span>
+    <span class="pub-journal">
+      <em>{{ entry.journal }}</em>{% if entry.volume %}, vol. {{ entry.volume }}{% endif %}{% if entry.pages %}, pp. {{ entry.pages }}{% endif %}
+    </span>
+    
+    <div class="pub-links">
+      {% if entry.doi %}
+        <a href="https://doi.org/{{ entry.doi }}" class="link-btn">DOI</a>
+      {% endif %}
+      {% if entry.arxiv %}
+        <a href="https://arxiv.org/abs/{{ entry.arxiv }}" class="link-btn">arXiv</a>
+      {% endif %}
+    </div>
+  </div>
+</div>
