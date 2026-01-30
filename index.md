@@ -29,7 +29,7 @@ title: About
 
 ## Research
 
-I work on the development of quantum algorithms for quantum many-body problems. My interests include multiple levels of the quantum computing stack, ranging from gate-level compilation to high-level formulations of problems in quantum chemistry and applied mathematics, targetting applications in materials science and pharmaceutical research.
+I work on the development of quantum algorithms for quantum many-body problems. I am interested in multiple levels of the quantum computing stack, ranging from high-level problem formulations down to gate-level implementation. The primary targetted applications are materials science and pharmaceutical research.
 
 ## Background
 
