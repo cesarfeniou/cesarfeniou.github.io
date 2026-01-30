@@ -356,194 +356,43 @@ a{ color: var(--link); }
 
 
 
-/* --- Publications Style (Inspired by Stefano Polla) --- */
-
-
-
-.publications-list {
-
-  margin-top: 2rem;
-
-}
-
-
-
 .pub-row {
-
   display: flex;
-
-  margin-bottom: 1.8rem;
-
-  gap: 20px;
-
-  line-height: 1.4;
-
+  margin-bottom: 25px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 15px;
 }
 
-
-
-.pub-year {
-
-  flex: 0 0 50px; /* Largeur fixe pour la colonne année */
-
-  font-weight: 600;
-
-  color: var(--muted);
-
-  font-size: 0.95rem;
-
-  padding-top: 2px;
-
+.abbr {
+  flex: 0 0 80px; /* Largeur de la colonne année */
+  font-weight: bold;
 }
 
-
-
-.pub-details {
-
-  flex: 1;
-
-}
-
-
-
-.pub-title {
-
-  display: block;
-
-  font-weight: 600;
-
-  color: var(--text);
-
-  font-size: 1.05rem;
-
-  margin-bottom: 2px;
-
-}
-
-
-
-.pub-title a {
-
-  color: var(--text);
-
-  text-decoration: none;
-
-  border-bottom: 1px solid transparent;
-
-  transition: border 0.2s;
-
-}
-
-
-
-.pub-title a:hover {
-
-  border-bottom: 1px solid var(--link);
-
+.badge {
+  background-color: var(--panel);
   color: var(--link);
-
-}
-
-
-
-.pub-authors {
-
-  display: block;
-
-  font-size: 0.92rem;
-
-  color: var(--muted);
-
-}
-
-
-
-.pub-authors strong {
-
-  color: var(--text); /* Ton nom plus visible */
-
-  font-weight: 600;
-
-}
-
-
-
-.pub-journal {
-
-  display: block;
-
-  font-size: 0.92rem;
-
-  color: #ffca28; /* Une touche de couleur dorée pour la revue */
-
-}
-
-
-
-.pub-links {
-
-  margin-top: 8px;
-
-}
-
-
-
-.link-btn {
-
-  font-size: 0.75rem;
-
-  text-transform: uppercase;
-
-  letter-spacing: 0.5px;
-
-  padding: 2px 8px;
-
+  padding: 5px 10px;
+  border-radius: 5px;
   border: 1px solid var(--border);
+}
 
-  border-radius: 4px;
+.title {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
 
+.author {
+  font-size: 0.95rem;
   color: var(--muted);
+}
 
+.links {
+  margin-top: 10px;
+}
+
+.links a {
+  margin-right: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
   text-decoration: none;
-
-  margin-right: 5px;
-
-  transition: all 0.2s;
-
-}
-
-
-
-.link-btn:hover {
-
-  background: var(--link);
-
-  color: var(--bg);
-
-  border-color: var(--link);
-
-}
-
-
-
-/* Mobile */
-
-@media (max-width: 600px) {
-
-  .pub-row {
-
-    flex-direction: column;
-
-    gap: 5px;
-
-  }
-
-  .pub-year {
-
-    font-size: 1.1rem;
-
-    color: var(--link);
-
-  }
-
 }
