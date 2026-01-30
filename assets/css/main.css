@@ -38,6 +38,7 @@ body{
   background: rgba(11,15,20,0.85);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
+  z-index: 100; /* Assure que le header reste au-dessus */
 }
 
 .site-header .container{
@@ -56,7 +57,7 @@ body{
 
 .nav a{
   color: var(--muted);
-  text-decoration: none; /* removes default underlines */
+  text-decoration: none;
   margin-left: 16px;
   padding: 6px 10px;
   border-radius: 10px;
@@ -77,7 +78,7 @@ body{
 
 /* --- Page title / content panel --- */
 .page-title{
-  margin: 28px 0 12px;
+  margin: 40px 0 20px; /* Augmentation de la marge supérieure (40px au lieu de 28px) */
   font-size: 28px;
   line-height: 1.2;
 }
@@ -86,15 +87,16 @@ body{
   background: rgba(255,255,255,0.02);
   border: 1px solid var(--border);
   border-radius: 16px;
-  padding: 14px 18px 16px;  /* less top padding */
+  padding: 24px 20px;  /* Augmentation du padding pour plus d'espace intérieur */
+  margin-top: 10px;    /* Petit espace supplémentaire au-dessus du bloc gris */
 }
 
 /* --- Links --- */
 a{ color: var(--link); }
 
 .content a{
-  text-decoration: none; /* no underline */
-  border-bottom: 1px solid rgba(139,211,255,0.25); /* subtle underline */
+  text-decoration: none;
+  border-bottom: 1px solid rgba(139,211,255,0.25);
 }
 
 .content a:hover{
@@ -104,40 +106,35 @@ a{ color: var(--link); }
 /* --- Footer --- */
 .site-footer{
   border-top: 1px solid var(--border);
-  margin-top: 40px;
-  padding: 18px 0;
+  margin-top: 60px; /* Plus d'espace avant le footer */
+  padding: 30px 0;
   color: var(--muted);
   font-size: 14px;
 }
 
 /* =========================
-   About page blocks (from custom.css)
+   About page blocks
    ========================= */
 
-/* --- Intro layout (About) --- */
 .intro{
   display: flex;
-  align-items: flex-start;     /* top-align text + photo */
+  align-items: flex-start;
   justify-content: space-between;
   width: 100%;
   gap: 2rem;
-  margin-top: 0;              /* <-- remove extra top gap */
 }
 
-/* Remove default heading spacing pushing content down */
 .intro-text h1{
-  margin-top: 4px;        /* ← key line */
+  margin-top: 0;
   margin-bottom: 0.6rem;
 }
 
-/* Meta spacing */
 .intro-meta{
   margin: 0 0 1rem 0;
   color: #999;
   font-size: 0.95rem;
 }
 
-/* Right photo column */
 .intro-photo{
   flex: 0 0 auto;
   margin-left: auto;
@@ -145,14 +142,13 @@ a{ color: var(--link); }
 
 .intro-photo img{
   display: block;
-  width: 180px;               /* <- set your desired size here */
+  width: 180px;
   height: 180px;
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.25);
 }
 
-/* Mobile fallback */
 @media (max-width: 768px){
   .intro{
     flex-direction: column-reverse;
@@ -160,43 +156,59 @@ a{ color: var(--link); }
     text-align: center;
     gap: 1.25rem;
   }
-
-  .intro-photo{
-    margin-left: 0;
-  }
-
-  .intro-photo img{
-    width: 170px;
-    height: 170px;
-  }
+  .intro-photo{ margin-left: 0; }
 }
 
-
-/* --- Footer --- */
-.site-footer {
-  border-top: 1px solid var(--border);
-  margin-top: 40px;
-  padding: 22px 0;
-  color: var(--muted);
-  font-size: 14px;
-}
-
-.site-footer .social-icons {
+.social-icons {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1.8rem;           /* spacing between icons */
+  gap: 1.8rem;
 }
 
-/* --- Social icons --- */
 .social-icons a {
   color: var(--muted);
   text-decoration: none;
-  font-size: 1.3rem;     /* smaller, refined size */
+  font-size: 1.3rem;
 }
 
 .social-icons a:hover {
   color: var(--text);
 }
 
-@import pubs.css
+/* --- Publications --- */
+.pub-item{
+  list-style: none;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.pub-venue{
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin-bottom: 4px;
+}
+
+.pub-title{
+  font-size: 1.05rem;
+  font-weight: 650;
+  line-height: 1.35;
+  margin-bottom: 6px;
+}
+
+.pub-title a{
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(231,237,245,0.18);
+}
+
+.pub-pill{
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.03);
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
