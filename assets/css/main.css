@@ -78,7 +78,7 @@ body{
 
 /* --- Page title / content panel --- */
 .page-title{
-  margin: 40px 0 20px; /* Augmentation de la marge supérieure (40px au lieu de 28px) */
+  margin: 60px 0 20px; /* Augmentation de la marge supérieure (40px au lieu de 28px) */
   font-size: 28px;
   line-height: 1.2;
 }
@@ -87,7 +87,7 @@ body{
   background: rgba(255,255,255,0.02);
   border: 1px solid var(--border);
   border-radius: 16px;
-  padding: 24px 20px;  /* Augmentation du padding pour plus d'espace intérieur */
+  padding: 20px 20px;  /* Augmentation du padding pour plus d'espace intérieur */
   margin-top: 10px;    /* Petit espace supplémentaire au-dessus du bloc gris */
 }
 
@@ -175,40 +175,68 @@ a{ color: var(--link); }
 .social-icons a:hover {
   color: var(--text);
 }
-
-/* --- Publications --- */
-.pub-item{
+/* --- Publications (Enhanced) --- */
+.pub-item {
   list-style: none;
-  padding: 14px 0;
+  padding: 20px 0;
   border-bottom: 1px solid var(--border);
+  transition: background 0.2s ease;
 }
 
-.pub-venue{
-  color: var(--muted);
-  font-size: 0.92rem;
-  margin-bottom: 4px;
+.pub-item:hover {
+  background: rgba(255, 255, 255, 0.01); /* Effet de surbrillance discret */
 }
 
-.pub-title{
-  font-size: 1.05rem;
-  font-weight: 650;
-  line-height: 1.35;
+.pub-venue {
+  color: #ffca28; /* Couleur dorée/jaune pour le journal/conférence */
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
   margin-bottom: 6px;
 }
 
-.pub-title a{
+.pub-title {
+  font-size: 1.15rem;
+  font-weight: 700;
   color: var(--text);
-  text-decoration: none;
-  border-bottom: 1px solid rgba(231,237,245,0.18);
+  margin-bottom: 8px;
 }
 
-.pub-pill{
-  display: inline-block;
-  padding: 6px 10px;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background: rgba(255,255,255,0.03);
-  color: var(--text);
+.pub-title a {
+  color: var(--link); /* Bleu clair pour le titre cliquable */
   text-decoration: none;
-  font-size: 0.9rem;
+}
+
+.pub-authors {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.pub-authors strong {
+  color: var(--text); /* Met ton nom en valeur si tu l'entoures de <strong> */
+}
+
+.pub-links {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.pub-pill {
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1px solid var(--link);
+  color: var(--link);
+  background: transparent;
+  transition: all 0.2s;
+}
+
+.pub-pill:hover {
+  background: var(--link);
+  color: var(--bg); /* Inversion des couleurs au survol */
 }
