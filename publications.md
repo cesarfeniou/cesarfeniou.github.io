@@ -4,12 +4,16 @@ title: Publications
 permalink: /publications/
 ---
 
-Below is a list of my publications.  
-You can also find them on
-<a href="https://scholar.google.com/citations?user=atHK9rYAAAAJ&hl" target="_blank">
-Google Scholar
-</a>.
+<div class="publications-header">
+  <h1 class="page-title">Publications</h1>
+  <p class="intro-meta">
+    You can also find my work on 
+    <a href="https://scholar.google.com/citations?user=atHK9rYAAAAJ&hl" target="_blank" class="scholar-link">
+      Google Scholar <i class="fas fa-external-link-alt"></i>
+    </a>
+  </p>
+</div>
 
----
-
-{% bibliography --group_by year --sort_by year --order descending %}
+<div class="content publications-list">
+  {% bibliography --group_by none --sort_by year --order descending %}
+</div>
