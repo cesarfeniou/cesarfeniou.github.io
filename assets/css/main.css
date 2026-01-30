@@ -175,68 +175,85 @@ a{ color: var(--link); }
 .social-icons a:hover {
   color: var(--text);
 }
-/* --- Publications (Enhanced) --- */
-.pub-item {
-  list-style: none;
-  padding: 20px 0;
-  border-bottom: 1px solid var(--border);
-  transition: background 0.2s ease;
-}
+/* --- Enhanced Publications Style --- */
 
-.pub-item:hover {
-  background: rgba(255, 255, 255, 0.01); /* Effet de surbrillance discret */
-}
-
-.pub-venue {
-  color: #ffca28; /* Couleur dorée/jaune pour le journal/conférence */
-  font-size: 0.9rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin-bottom: 6px;
-}
-
-.pub-title {
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--text);
-  margin-bottom: 8px;
-}
-
-.pub-title a {
-  color: var(--link); /* Bleu clair pour le titre cliquable */
-  text-decoration: none;
-}
-
-.pub-authors {
-  color: var(--muted);
-  font-size: 0.95rem;
-  margin-bottom: 8px;
-}
-
-.pub-authors strong {
-  color: var(--text); /* Met ton nom en valeur si tu l'entoures de <strong> */
-}
-
-.pub-links {
-  display: flex;
-  gap: 8px;
-  margin-top: 12px;
-}
-
-.pub-pill {
-  padding: 4px 12px;
-  border-radius: 6px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  text-decoration: none;
-  border: 1px solid var(--link);
+/* Style pour le lien Google Scholar */
+.scholar-link {
   color: var(--link);
-  background: transparent;
-  transition: all 0.2s;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px dashed var(--link);
 }
 
-.pub-pill:hover {
+/* Container de la liste */
+.publications-list ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.publications-list li {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+  line-height: 1.5;
+}
+
+/* Titre de l'article */
+.publications-list .title {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #8bd3ff; /* Bleu Quantum */
+  margin-bottom: 4px;
+}
+
+/* Auteurs */
+.publications-list .author {
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+/* Ton nom en gras (si configuré dans le template) */
+.publications-list .author em, 
+.publications-list .author strong {
+  color: #fff;
+  font-style: normal;
+  text-decoration: underline;
+}
+
+/* Journal / Revue */
+.publications-list .periodical {
+  display: block;
+  color: #ffca28; /* Couleur Or pour le prestige du journal */
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+/* Année */
+.publications-list .year {
+  font-weight: bold;
+  color: var(--muted);
+}
+
+/* Liens (PDF, DOI, Arxiv) */
+.publications-list .links a {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 8px;
+  padding: 4px 12px;
+  font-size: 0.8rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.05);
+  color: var(--text);
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.publications-list .links a:hover {
   background: var(--link);
-  color: var(--bg); /* Inversion des couleurs au survol */
+  color: var(--bg);
+  border-color: var(--link);
 }
