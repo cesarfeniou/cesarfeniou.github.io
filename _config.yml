@@ -7,10 +7,6 @@ baseurl: ""
 
 markdown: kramdown
 
-# Keep it minimal: no plugins at start
-plugins: []
-
-# Optional: nicer permalinks later
 permalink: pretty
 
 plugins:
