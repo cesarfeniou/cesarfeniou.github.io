@@ -8,8 +8,8 @@ title: About
   <div class="intro-text">
     <h1>César Feniou</h1>
 
-    <p class="intro-meta">
-      Quantum Algorithm Research Lead @ Qubit Pharmaceuticals <br>
+    <p class="intro-meta" style="font-size: 1.15rem; line-height: 1.6;">
+      <strong>Quantum Algorithm Research Lead @ Qubit Pharmaceuticals</strong> <br>
       <a href="mailto:cesarf@qubit-pharmaceuticals.com">
         cesarf@qubit-pharmaceuticals.com
       </a>
