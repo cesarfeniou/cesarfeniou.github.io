@@ -9,7 +9,20 @@ permalink: /publications/
 <div class="pub-list">
 
 <div class="pub-row pub-new">
-  <div class="abbr"><span class="badge badge-new">new · arXiv</span></div>
+  <div class="abbr"><span class="badge badge-new">new · J. Math. Chem.</span></div>
+  <div>
+    <div class="pub-title">Strictly localized orbitals from spatial partitioning with the discontinuous Galerkin method</div>
+    <div class="pub-authors"><strong>C. Feniou</strong>, J. Toulouse</div>
+    <div class="pub-authors"><em>Journal of Mathematical Chemistry</em> 64, 60 (2026)</div>
+    <div class="pub-links">
+      <a href="https://doi.org/10.1007/s10910-026-01823-3" target="_blank">paper</a>
+      <a href="https://arxiv.org/abs/2606.21746" target="_blank">arXiv</a>
+    </div>
+  </div>
+</div>
+
+<div class="pub-row">
+  <div class="abbr"><span class="badge">arXiv</span></div>
   <div>
     <div class="pub-title">High Performance Quantum Emulation for Chemistry Applications with Hyperion</div>
     <div class="pub-authors">O. Adjoua, S. Badreddine, <strong>C. Feniou</strong>, I. Chollet, D. Traore, G. Michel, J.-P. Piquemal</div>
@@ -20,8 +33,8 @@ permalink: /publications/
   </div>
 </div>
 
-<div class="pub-row pub-new">
-  <div class="abbr"><span class="badge badge-new">new · arXiv</span></div>
+<div class="pub-row">
+  <div class="abbr"><span class="badge">arXiv</span></div>
   <div>
     <div class="pub-title">The Convergence Frontier: Integrating Machine Learning and High Performance Quantum Computing for Next-Generation Drug Discovery</div>
     <div class="pub-authors">N. Ansari, <strong>C. Feniou</strong>, N. Gouraud, D. Loco, S. Badreddine, B. Claudon, F. Aviat, M. Blazhynska, K. Gasperich, G. Michel, D. Traore, C. Villot, T. Plé, O. Adjoua, L. Lagardère, J.-P. Piquemal</div>
@@ -32,8 +45,8 @@ permalink: /publications/
   </div>
 </div>
 
-<div class="pub-row pub-new">
-  <div class="abbr"><span class="badge badge-new">new · arXiv</span></div>
+<div class="pub-row">
+  <div class="abbr"><span class="badge">arXiv</span></div>
   <div>
     <div class="pub-title">Logarithmic-depth quantum state preparation of polynomials</div>
     <div class="pub-authors">B. Claudon, A. Lucas, J.-P. Piquemal, <strong>C. Feniou</strong>, J. Zylberman</div>
