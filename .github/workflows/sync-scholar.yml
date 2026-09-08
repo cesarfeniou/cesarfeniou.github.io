@@ -2,7 +2,7 @@ name: Sync Google Scholar
 
 on:
   schedule:
-    - cron: '0 6 * * 1'   # every Monday at 06:00 UTC
+    - cron: '0 6 1 * *'   # first day of every month at 06:00 UTC
   workflow_dispatch:        # allow manual trigger
 
 jobs:
@@ -20,11 +20,11 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install scholarly bibtexparser
+        run: pip install scholarly==1.7.11 bibtexparser==1.4.3
 
       - name: Run Scholar sync
         env:
-          SCHOLAR_ID: ${{ secrets.SCHOLAR_ID }}
+          SCHOLAR_ID: atHK9rYAAAAJ
         run: python scripts/sync_scholar.py
 
       - name: Commit updated bibliography

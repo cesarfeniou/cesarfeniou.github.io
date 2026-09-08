@@ -7,8 +7,8 @@ title: About
   <div class="intro-text">
     <h1>César Feniou</h1>
     <p class="intro-meta">
-      <span class="intro-position">Quantum Algorithm Research Lead · <a href="https://www.qubit-pharmaceuticals.com/" target="_blank">Qubit Pharmaceuticals</a></span><br>
-      <span class="intro-location">Paris, France</span>
+      <span class="intro-position">Postdoctoral Researcher · <a href="https://www.universiteitleiden.nl/en/science/computer-science" target="_blank">Leiden University</a> &amp; <a href="https://www.uva.nl/en" target="_blank">University of Amsterdam</a></span><br>
+      <span class="intro-location">Amsterdam–Leiden, Netherlands</span>
     </p>
     <p class="intro-contact">
       <a href="mailto:cesar.feniou@gmail.com" class="mail-link">
@@ -35,6 +35,8 @@ title: About
 ## Research
 
 I work on quantum algorithms for quantum many-body problems, with an eye toward applications in chemistry, including materials science and drug discovery. My interests span multiple levels of the quantum computing stack: from high-level problem representations down to low-level quantum circuit optimisation. 
+
+I am currently a joint postdoctoral researcher at Leiden University and the University of Amsterdam, working across LIACS, QuSoft and aQa-Leiden with Stefano Polla, Vedran Dunjko and Hao Wang.
 
 ## Background
 

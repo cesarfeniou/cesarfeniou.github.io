@@ -9,6 +9,28 @@ permalink: /news/
 <div class="news-list">
 
 <div class="news-item">
+  <span class="news-date">Sep 2026</span>
+  <span class="news-text">Started a joint postdoctoral position at Leiden University and the University of Amsterdam, working across LIACS, QuSoft and aQa-Leiden with Stefano Polla, Vedran Dunjko and Hao Wang.</span>
+</div>
+
+<div class="news-item">
+  <span class="news-date">Aug 2026</span>
+  <span class="news-text">Attended the <a href="https://www.lorentzcenter.nl/quantum-software-for-drug-design.html" target="_blank"><em>Quantum Software for Drug Design</em></a> workshop at the Lorentz Center — Leiden, Netherlands.</span>
+</div>
+
+<div class="news-item">
+  <span class="news-date">Jul 2026</span>
+  <span class="news-text">Talk at the EMC2 workshop — Roscoff, France.<br>
+  Talk title: <em>About basis sets in quantum algorithms for quantum chemistry</em>.</span>
+</div>
+
+<div class="news-item">
+  <span class="news-date">Jul 2026</span>
+  <span class="news-text">Talk at the <a href="https://flaqship.eu/ftqc4nsc/" target="_blank">FTQC4NSc Symposium</a> — Heilbronn, Germany.<br>
+  Talk title: <em>Logarithmic-depth quantum state preparation of polynomials</em>.</span>
+</div>
+
+<div class="news-item">
   <span class="news-date">Apr 2026</span>
   <span class="news-text">Invited talk at the Telluride Science & Innovation Center, Workshop on <em>Quantum Computing for Quantum Chemistry, Molecular Dynamics, and Beyond</em> (org. A. Izmaylov & Y. Zhang).<br>
   Talk title: <em>Chemistry-aware quantum algorithms and efficient quantum primitives</em>.</span>
@@ -53,11 +75,6 @@ permalink: /news/
 <div class="news-item">
   <span class="news-date">Aug 2025</span>
   <span class="news-text">Poster presentation at <a href="https://conference.seeqa.org/" target="_blank">SEEQA 2025</a> — Oxford, UK.</span>
-</div>
-
-<div class="news-item">
-  <span class="news-date">Jul 2025</span>
-  <span class="news-text">Invited talk at the <a href="https://erc-emc2.eu/" target="_blank">EMC2</a> workshop — Roscoff, France.</span>
 </div>
 
 </div>

@@ -4,9 +4,7 @@ Fetches publications from Google Scholar and merges them into _bibliography/pape
 Run via GitHub Actions (see .github/workflows/sync-scholar.yml).
 
 Setup:
-  1. Find your Google Scholar author ID from your profile URL:
-     https://scholar.google.com/citations?user=YOUR_ID
-  2. Add it as a GitHub Actions secret named SCHOLAR_ID.
+  Set SCHOLAR_ID to override the default profile when running locally.
 """
 
 import os
@@ -15,7 +13,7 @@ import time
 import bibtexparser
 from scholarly import scholarly, ProxyGenerator
 
-SCHOLAR_ID = os.environ.get("SCHOLAR_ID", "")
+SCHOLAR_ID = os.environ.get("SCHOLAR_ID", "atHK9rYAAAAJ")
 BIB_PATH   = "_bibliography/papers.bib"
 
 # ── Optional: use a free proxy to avoid rate-limiting ──────────────────────
@@ -36,22 +34,20 @@ def fetch_publications(author_id: str) -> list[dict]:
     author = scholarly.fill(author, sections=["publications"])
     pubs = []
     for pub in author["publications"]:
-        try:
-            filled = scholarly.fill(pub)
-            bib = filled.get("bib", {})
-            pubs.append({
-                "title":   bib.get("title", ""),
-                "author":  bib.get("author", ""),
-                "year":    str(bib.get("pub_year", "")),
-                "journal": bib.get("journal", bib.get("booktitle", "")),
-                "volume":  bib.get("volume", ""),
-                "pages":   bib.get("pages", ""),
-                "url":     filled.get("pub_url", ""),
-                "abstract":bib.get("abstract", ""),
-            })
-            time.sleep(1.5)   # be polite to Scholar
-        except Exception as e:
-            print(f"  Warning: could not fill publication — {e}")
+        # The author record already contains the metadata needed for the
+        # bibliography. Avoid filling every publication separately: doing so
+        # creates dozens of requests and is frequently blocked on CI runners.
+        bib = pub.get("bib", {})
+        pubs.append({
+            "title":   bib.get("title", ""),
+            "author":  bib.get("author", ""),
+            "year":    str(bib.get("pub_year", "")),
+            "journal": bib.get("citation", ""),
+            "volume":  "",
+            "pages":   "",
+            "url":     pub.get("pub_url", ""),
+            "abstract":"",
+        })
     return pubs
 
 def load_existing_bib(path: str) -> bibtexparser.bibdatabase.BibDatabase:
